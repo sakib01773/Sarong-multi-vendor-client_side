@@ -1,35 +1,41 @@
-.login-form{
+.login-form {
     padding: 50px 0;
     box-shadow: 0 1px 3px #888 !important;
 }
-.images{
-    padding: 30px 0;
+
+.images {
+    padding: 31px 0;
     box-shadow: 0 0px 1px #888;
     margin-bottom: 10px;
-    
+
 
 }
-.login-background{
+
+.login-background {
     /* background-color: #0E1621; */
     /* background-color: #7E2231; */
     /* background-color: #182533; */
     /* width:100%; */
-    height:100vh;
+    height: 100vh;
     /* padding-bottom: 65px; */
 }
+
 .login-form input {
     outline: none;
-   
+
     border: 0;
-    border-bottom: 1px solid #1289A7;;
+    border-bottom: 1px solid #1289A7;
+    ;
     padding-left: 15px;
     border-radius: 30px;
     height: 40px;
 }
-.login-form button{
+
+.login-form button {
     outline: none;
     border: 2px solid transparent;
-    background: #1289A7;;
+    background: #1289A7;
+    ;
     color: white;
     font-weight: 600;
     padding: 10px 70px;
@@ -37,19 +43,23 @@
     text-transform: uppercase;
     transition: all .4s;
 }
-.login-form button:hover{
-    border: 2px solid #1289A7;;
+
+.login-form button:hover {
+    border: 2px solid #1289A7;
+    ;
     background-color: white;
-    color: #1289A7;;
+    color: #1289A7;
+    ;
 }
-.login-form h2{
+
+.login-form h2 {
     line-height: 3.5;
 }
-.login-meta span{
+
+.login-meta span {
     line-height: 3.2;
 }
 
-.google{
+.google {
     cursor: pointer;
 }
-
