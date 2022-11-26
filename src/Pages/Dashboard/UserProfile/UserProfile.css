@@ -1,0 +1,27 @@
+.profile-title{
+    padding: 20px 20px;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+.profile-title h3{
+    margin-bottom: 0;
+}
+.profile-title span{
+    color: white;
+    cursor: pointer;
+}
+.profile-title span>.edit-icon{
+    margin-bottom: 4px;
+}
+.user-verify{
+    text-align: center;
+}
+.user-verify img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.profile-information h6{
+    font-size: 18px;
+    margin-bottom: 0;
+}

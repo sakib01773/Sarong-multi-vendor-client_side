@@ -1,0 +1,113 @@
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+	/* Force table to not be like tables anymore */
+	.my-order-container table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.my-order-container thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.my-order-container tr {
+		margin: 0 0 1rem 0;
+	}
+
+	.my-order-container tr:nth-child(odd) {
+		background: #ccc;
+	}
+
+	.product-designs{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	.my-order-container td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	.my-order-container td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	.my-order-container td:nth-of-type(1):before {
+		content: "Subject Name";
+	}
+
+	.my-order-container td:nth-of-type(2):before {
+		content: "Topic";
+	}
+
+	.my-order-container td:nth-of-type(3):before {
+		content: "Book View";
+	}
+
+	.my-order-container td:nth-of-type(4):before {
+		content: "Status";
+	}
+
+}
+.my-syllbus{
+    background-color:black;
+}
+
+.btn-style {
+    outline: none;
+    background-color: #1289A7;
+    border: 2px solid transparent;
+    color: white;
+    padding: 4px 20px;
+    font-weight: 600;
+    transition: all .5s;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.btn-style.download-btn{
+    /* background-color: white; */
+    /* color: #1289A7; */
+    background-color: #2B5278;
+    /* border: 2px solid white; */
+    color:white;
+}
+.btn-style.download-btn:hover{
+    /* background-color: white; */
+    /* color: #1289A7; */
+    background-color: #182533;
+    /* border: 2px solid white; */
+    color:white;
+}
+
+.table-design{
+	background-color: #182533;
+	color:white;
+}
+
+.my-question{
+	/* color: #1289A7; */
+	color: #46AADC;
+}
+.btn-style{
+	background-color: #2B5278;
+	/* background-color: #182533; */
+}

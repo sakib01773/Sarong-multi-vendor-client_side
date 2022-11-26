@@ -1,0 +1,55 @@
+.sharee-design{
+    font-size: 21px;
+}
+
+.main-parts{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media only screen and  (min-width:1824px) {
+    .partdetsils{
+        margin-left: 76px !important;
+      }
+      .photoalbums img{
+        width:325px !important;
+        border-radius: 17px !important; 
+    }
+   
+    
+}
+@media only screen and  (min-width:1624px) {
+    .partdetsils{
+        margin-left: 80px !important;
+      }
+
+      .photoalbums img{
+        width:327px !important;
+        border-radius: 17px !important; 
+    }
+   
+    
+}
+@media only screen and  (min-width:1524px) {
+    .partdetsils{
+        margin-left: 80px !important;
+      }
+      .photoalbums img{
+        width:329px !important;
+        border-radius: 17px !important; 
+    }
+   
+    
+}
+@media only screen and  (min-width:1324px) {
+    .partdetsils{
+        margin-left: 80px !important;
+      }
+
+      .photoalbums img{
+        width:330px !important;
+        border-radius: 17px !important; 
+    }
+   
+    
+}

@@ -1,0 +1,35 @@
+.order-design{
+    /* background-image: linear-gradient(to right, rgb(50, 188, 211), rgb(134, 255, 78)); */
+    /* background-image: linear-gradient(to right, #7E2231,  rgb(50, 188, 211) ); */
+    background-image: linear-gradient(to right, #7E2231,  #D0425C );
+    color:white;
+}
+
+.orders-design{
+    /* background-image: linear-gradient(to right,  #D0425C , rgb(0, 85, 147)); */
+    background-image: linear-gradient(to right,  #D0425C , #550412);
+    color:white !important;
+}
+
+.input-design{
+    padding:5px 15px;
+    align-items: left;
+    border:1px solid black;
+   
+    border-image-slice: 1;
+    box-shadow: 1px  1px 1px;
+    border-radius: 8px !important;
+}
+
+.apply-design{
+    padding: 5px 29px;
+    border-radius: 8px;
+    /* background-image: linear-gradient(to right,  #D0425C , rgb(0, 85, 147)); */
+    background-image: linear-gradient(to right,  #D0425C , #7E2231 );
+    color:white !important;
+    border:1px solid white;
+}
+
+
+/* #7E2231  */
+/* #D0425C  */

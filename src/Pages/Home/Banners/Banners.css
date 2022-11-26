@@ -1,0 +1,101 @@
+.hero-section {
+    /* position: relative; */
+    background-image: url("https://c8.alamy.com/comp/HYRTYM/colourful-clay-pots-locally-called-shokher-hari-display-at-lok-o-karushilpo-HYRTYM.jpg");
+    /* background-image: url("https://textildealcdn.sgp1.digitaloceanspaces.com/uploads/KIMORA-FASHION-KAJAL-VOL-6-PARTY-WEAR-WEDDING-SARIS-LATEST-COLLECTION-AT-BEST-PRICES-2.jpeg"); */
+    height: 83vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* z-index: 1; */
+  }
+.hero-section2 {
+    /* position: relative; */
+    background-image: url("https://textildealcdn.sgp1.digitaloceanspaces.com/uploads/KIMORA-FASHION-KAJAL-VOL-6-PARTY-WEAR-WEDDING-SARIS-LATEST-COLLECTION-AT-BEST-PRICES-22.jpeg");
+    /* background-image: url("https://i.pinimg.com/originals/f3/ca/a3/f3caa3a31100da48c5c09f14063fc9d7.jpg"); */
+    height: 83vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* z-index: 1; */
+  }
+.hero-section3 {
+    /* position: relative; */
+    /* background-image: url("https://kusumsarees.in/files/9156574315048.jpeg"); */
+    background-image: url("https://textildealcdn.sgp1.digitaloceanspaces.com/uploads/KIMORA-FASHION-PRESENTS-KAJAL-VOL-8-5151-5161-SERIES-FANCY-HEAVY-DESIGNER-SAREE-WHOLESALER-11.jpeg");
+    height: 83vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* z-index: 1; */
+  }
+ 
+  .hero-section::before{
+    /* position: absolute; */
+    content:"";
+    background-color: black;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: .7;
+    /* z-index: -1; */
+  }
+
+
+  .mouses{
+    /* grid-template-columns: repeat(3,1fr); */
+    display: flex;
+   }
+   
+   .keys{
+       /* background-color:darkcyan; */
+       margin-top: -12px;
+   }
+   
+   .mouses i{
+       color:white;
+       font-size: 35px;
+   }
+   /* .laptops i{
+       color:white;
+       font-size: 25px;
+   } */
+   .dell{
+       background-color: white;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhA1nLXUvgjR2LmXFGZ-l6lU94WEGkrwXlNlbHXSmoAi0ovXGGCBBoyqkm41_GMeZjuZM&usqp=CAU");
+       /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK6vPRtdPjNl1uDJCAyxa1RbAB2uLht8b5q6LL8pmeuk_LJKKVPxdBa1iSwVtLFJHqqAs&usqp=CAU"); */
+   }
+   .first{
+       background-color: white;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkE7Nh2C_C2_PgiwKbAphvAG72P6hrZa5qXsCZK8EY2WjHUdR_-KPLmTIs1QqhTtLwxgU&usqp=CAU");
+       /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK6vPRtdPjNl1uDJCAyxa1RbAB2uLht8b5q6LL8pmeuk_LJKKVPxdBa1iSwVtLFJHqqAs&usqp=CAU"); */
+   }
+   .dellss{
+       background-color: white;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl33RkDOksaAFAX4jDUb8gqbqAE5L71VTFGA&usqp=CAU");
+   }
+   .second{
+       background-color: white;
+       background-image: url("https://www.mymensingheralo.com/media/imgAll/2020Aprila/-2205300508.jpg");
+   }
+   .third{
+       background-color: white;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQap3KofMYCeHaKjjI8c6pgkdA5vvBh3GSwD5WCx7AIQcf-9TXO8pWt-O7-5GO3BTmiGqk&usqp=CAU");
+   }
+   
+   
+   
+   .dells{
+       background-color: #1f2833;
+       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRWeo9ybHmOGrxzVwZJYe3JOsCBnGJzVYIUv4CFGFHpm3DfgkCjbPW47up2BUfL7lqmcU&usqp=CAU');
+       color:white;
+       /* padding:7px; */
+   }
+   /* 1f2833 */
+   .stand-bg{
+       background-color:floralwhite;
+      
+       margin-bottom: 70px;
+   }
+   .dones{
+       color:white;
+   }

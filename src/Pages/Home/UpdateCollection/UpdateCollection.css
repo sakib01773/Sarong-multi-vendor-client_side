@@ -1,0 +1,57 @@
+.collections img{
+    height:180px;
+    margin-top: 45px;
+}
+
+.collectionss img{
+    height:170px;
+}
+
+.dress{
+    color:brown;
+}
+
+.upadate-dress{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 90px;
+    text-align: left;
+}
+
+.summer{
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+.collected-button{
+    margin-top: 20px;
+    text-align: left;
+    /* background-color: brown; */
+   
+
+}
+
+.shop-button{
+    background-color: brown;
+    color:white;
+    border:1px solid white;
+    border-radius: 15px;
+    padding:7px 15px;
+    font-size: 24px;
+
+}
+.choice-designs{
+    color:brown;
+}
+
+.explores-design{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.potter-update{
+    margin-top: 100px;
+}

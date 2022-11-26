@@ -1,0 +1,39 @@
+.googles:hover{
+    /* background-color: #1289A7; */
+    background-color:  #7E2231;
+    color:white;
+}
+
+.google-icon:hover{
+    color:white;
+}
+
+.signin-background{
+    background-color: #7E2231;
+    /* background-color: #182533; */
+    /* width:100%; */
+    height:140vh; 
+}
+
+.user-designs{
+padding: 5px 55px !important;
+background-color: #7E2231 !important;
+border:1px solid white !important;
+}
+
+.buyer-design{
+padding:5px 55px !important;
+background-color: #7E2231 !important;
+border:1px solid white !important;
+}
+
+.sign-designs{
+    padding:5px 75px !important;
+background-color: #7E2231 !important;
+border:1px solid white !important;
+margin-top: 10px !important;
+}
+
+
+
+
