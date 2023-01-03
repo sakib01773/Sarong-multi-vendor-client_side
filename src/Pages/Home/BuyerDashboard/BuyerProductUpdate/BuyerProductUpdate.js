@@ -19,7 +19,7 @@ const BuyerProductUpdate = () => {
     const handle = (id) => {
         // e.preventDefault()
         // data.complete = true
-        fetch(`https://evening-chamber-61046.herokuapp.com/updateProduct/${id}`, {
+        fetch(`http://localhost:5000/updateProduct/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({user}),

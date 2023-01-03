@@ -22,7 +22,7 @@ const BuyerDashboard = () => {
         // data.status = 'Pending'
      
 
-        fetch("https://evening-chamber-61046.herokuapp.com/PostBuyer", {
+        fetch("http://localhost:5000/PostBuyer", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

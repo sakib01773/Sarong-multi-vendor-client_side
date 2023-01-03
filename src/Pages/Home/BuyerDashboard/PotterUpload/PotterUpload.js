@@ -22,7 +22,7 @@ const PotterUpload = () => {
         // data.status = 'Pending'
      
 
-        fetch("https://evening-chamber-61046.herokuapp.com/postPotter", {
+        fetch("http://localhost:5000/postPotter", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

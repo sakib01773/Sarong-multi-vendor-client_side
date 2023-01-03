@@ -31,6 +31,33 @@ const CustomerAddress = ({ order, handleDelete }) => {
                 <Grid container spacing={{ xs: 3, md: 3 }} columns={{ xs: 12, sm: 12, md: 12 }}>
 
                     <Grid item xs={4} sm={4} md={4} >
+                        <Typography style={addressStyle}><span>Schedule</span><span>:</span></Typography>
+                    </Grid>
+                    <Grid item xs={8} sm={8} md={8} >
+                        <Typography >{order?.schedules}</Typography>
+                    </Grid>
+
+                </Grid>
+
+            </ListItem>
+
+
+            <ListItem button divider>
+                <Grid container spacing={{ xs: 3, md: 3 }} columns={{ xs: 12, sm: 12, md: 12 }}>
+
+                    <Grid item xs={4} sm={4} md={4} >
+                        <Typography style={addressStyle}><span>purchase</span><span>:</span></Typography>
+                    </Grid>
+                    <Grid item xs={8} sm={8} md={8} >
+                        <Typography >{order?.purchase}</Typography>
+                    </Grid>
+
+                </Grid>
+            </ListItem>
+            <ListItem button divider>
+                <Grid container spacing={{ xs: 3, md: 3 }} columns={{ xs: 12, sm: 12, md: 12 }}>
+
+                    <Grid item xs={4} sm={4} md={4} >
                         <Typography style={addressStyle}><span>Country</span><span>:</span></Typography>
                     </Grid>
                     <Grid item xs={8} sm={8} md={8} >

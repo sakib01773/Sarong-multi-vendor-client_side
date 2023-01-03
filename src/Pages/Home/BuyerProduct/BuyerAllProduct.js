@@ -53,7 +53,7 @@ const BuyerAllProduct = () => {
     //   },[])
 
     const fetchData = () => {
-      fetch('https://evening-chamber-61046.herokuapp.com/postBuyer')
+      fetch('http://localhost:5000/postBuyer')
         .then(res => res.json())
         // .then(data => setWork(data))
         .then(data => {
@@ -70,7 +70,7 @@ const BuyerAllProduct = () => {
 
 
     const handleLike = (id) => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/like/${id}`, {
+      fetch(`http://localhost:5000/like/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(userData)
@@ -89,7 +89,7 @@ const BuyerAllProduct = () => {
   
     }
     const handleUnLike = (id) => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/unlike/${id}`, {
+      fetch(`http://localhost:5000/unlike/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(userData)

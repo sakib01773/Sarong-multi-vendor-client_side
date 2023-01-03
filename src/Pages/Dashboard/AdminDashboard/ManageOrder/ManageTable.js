@@ -17,7 +17,7 @@ const ManageTable = (props) => {
 
 
     const handleUpdate = (id) => {
-        fetch(`https://evening-chamber-61046.herokuapp.com/buyerStatusUpdate/${id}`, {
+        fetch(`http://localhost:5000/buyerStatusUpdate/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ statu}),

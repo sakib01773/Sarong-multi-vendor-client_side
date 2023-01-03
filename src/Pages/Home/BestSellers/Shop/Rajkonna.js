@@ -56,14 +56,14 @@ const RajKonna = () => {
     // checkbox er value true or false return kore
 
     // useEffect(() => {
-    //     fetch('https://evening-chamber-61046.herokuapp.com/TaterSharees')
+    //     fetch('http://localhost:5000/TaterSharees')
     //         .then(res => res.json())
     //         .then(data => setQuestions(data.TaterSharee))
     // }, [])
 
     useEffect(() => {
         console.log(type)
-        fetch('https://evening-chamber-61046.herokuapp.com/sharee')
+        fetch('http://localhost:5000/sharee')
             .then(res => res.json())
             .then(data => {
                 setQuestions(data.allQuestions)
@@ -79,7 +79,7 @@ const RajKonna = () => {
 
 
     useEffect(()=>{
-        fetch('https://evening-chamber-61046.herokuapp.com/sharee')
+        fetch('http://localhost:5000/sharee')
         .then(res=>res.json())
         .then(data=>setModel(data.allQuestions))
     },[])

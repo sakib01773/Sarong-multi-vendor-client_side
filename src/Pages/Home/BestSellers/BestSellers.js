@@ -18,7 +18,7 @@ const BestSellers = () => {
 //  const {user}=useAuth()
 //   const [review,setReview]=useState([])
 //   useEffect(()=>{
-//     fetch('https://evening-chamber-61046.herokuapp.com/features')
+//     fetch('http://localhost:5000/features')
 //     .then(res=>res.json())
 //     .then(data=>setReview(data))
 //   },[])

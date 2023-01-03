@@ -78,7 +78,7 @@ const ShitalPati = () => {
 
     const fetchData = () => {
       // console.log(type, year, code,page)
-      fetch('https://evening-chamber-61046.herokuapp.com/getPotter')
+      fetch('http://localhost:5000/getPotter')
           .then(res => res.json())
           .then(data => {
             setQuestions(data.allQuestions)
@@ -94,13 +94,13 @@ const ShitalPati = () => {
 
 
     useEffect(()=>{
-        fetch('https://evening-chamber-61046.herokuapp.com/getPotter')
+        fetch('http://localhost:5000/getPotter')
         .then(res=>res.json())
         .then(data=>setModel(data.allQuestions))
     },[])
 
     const handleLike = (id) => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/potterlike/${id}`, {
+      fetch(`http://localhost:5000/potterlike/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(userData)
@@ -119,7 +119,7 @@ const ShitalPati = () => {
   
     }
     const handleUnLike = (id) => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/potterunlike/${id}`, {
+      fetch(`http://localhost:5000/potterunlike/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(userData)

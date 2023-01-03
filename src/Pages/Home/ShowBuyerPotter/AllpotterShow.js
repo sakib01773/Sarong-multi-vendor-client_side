@@ -74,7 +74,7 @@ const AllpotterShow = () => {
         setPage(data.selected);
     }
     const fetchData = () => {
-        fetch(`https://evening-chamber-61046.herokuapp.com/getPotter?page=${page}&&categories=${categories}&&sizing=${sizing}&&warrenty=${warrenty}&&material=${material}&&size=${size}`)
+        fetch(`http://localhost:5000/getPotter?page=${page}&&categories=${categories}&&sizing=${sizing}&&warrenty=${warrenty}&&material=${material}&&size=${size}`)
         .then(res => res.json())
         .then(data => {
             setQuestions(data.allQuestions)
@@ -89,7 +89,7 @@ const AllpotterShow = () => {
       }, [categories, page,size,sizing,warrenty,material,size])
 
       const handleLike = (id) => {
-        fetch(`https://evening-chamber-61046.herokuapp.com/potterlike/${id}`, {
+        fetch(`http://localhost:5000/potterlike/${id}`, {
           method: "PUT",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(userData)
@@ -108,7 +108,7 @@ const AllpotterShow = () => {
     
       }
       const handleUnLike = (id) => {
-        fetch(`https://evening-chamber-61046.herokuapp.com/potterunlike/${id}`, {
+        fetch(`http://localhost:5000/potterunlike/${id}`, {
           method: "PUT",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(userData)
@@ -133,7 +133,7 @@ const AllpotterShow = () => {
 
 //     useEffect(() => {
 //       // console.log(department, year, semester)
-//       fetch(`https://evening-chamber-61046.herokuapp.com/sharee?page=${page}&&categories=${categories}&&sizing=${sizing}&&warrenty=${warrenty}&&material=${material}&&size=${size}`)
+//       fetch(`http://localhost:5000/sharee?page=${page}&&categories=${categories}&&sizing=${sizing}&&warrenty=${warrenty}&&material=${material}&&size=${size}`)
 //           .then(res => res.json())
 //           .then(data => {
 //               setQuestions(data.allQuestions)
@@ -146,7 +146,7 @@ const AllpotterShow = () => {
 
 
     useEffect(()=>{
-        fetch('https://evening-chamber-61046.herokuapp.com/getPotter')
+        fetch('http://localhost:5000/getPotter')
         .then(res=>res.json())
         .then(data=>setModel(data.allQuestions))
     },[])

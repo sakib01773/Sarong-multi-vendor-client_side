@@ -76,14 +76,14 @@ const TaterSharee = () => {
     // checkbox er value true or false return kore
 
     // useEffect(() => {
-    //     fetch('https://evening-chamber-61046.herokuapp.com/TaterSharees')
+    //     fetch('http://localhost:5000/TaterSharees')
     //         .then(res => res.json())
     //         .then(data => setQuestions(data.TaterSharee))
     // }, [])
 
     // useEffect(() => {
     //     console.log(type, year, code)
-    //     fetch('https://evening-chamber-61046.herokuapp.com/sharee')
+    //     fetch('http://localhost:5000/sharee')
     //         .then(res => res.json())
     //         .then(data => {
     //             setQuestions(data.allQuestions)
@@ -98,7 +98,7 @@ const TaterSharee = () => {
     // }, [type, year, code, page]);
 
     const fetchData = () => {
-      fetch('https://evening-chamber-61046.herokuapp.com/sharee')
+      fetch('http://localhost:5000/sharee')
       .then(res => res.json())
       .then(data => {
           setQuestions(data.allQuestions)
@@ -117,7 +117,7 @@ const TaterSharee = () => {
 
 
     useEffect(()=>{
-        fetch('https://evening-chamber-61046.herokuapp.com/sharee')
+        fetch('http://localhost:5000/sharee')
         .then(res=>res.json())
         .then(data=>setModel(data.allQuestions))
     },[])
@@ -125,7 +125,7 @@ const TaterSharee = () => {
 
     // like 
     const handleLike = (id) => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/like/${id}`, {
+      fetch(`http://localhost:5000/like/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(userData)
@@ -144,7 +144,7 @@ const TaterSharee = () => {
   
     }
     const handleUnLike = (id) => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/unlike/${id}`, {
+      fetch(`http://localhost:5000/unlike/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(userData)

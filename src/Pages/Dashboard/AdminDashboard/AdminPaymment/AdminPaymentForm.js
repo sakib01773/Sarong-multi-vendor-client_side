@@ -47,7 +47,7 @@ const AdminPaymentForm = () => {
       status: "Pending",
     };
     axios
-      .post('https://evening-chamber-61046.herokuapp.com/inits', paymentData)
+      .post('http://localhost:5000/inits', paymentData)
       .then((res) => {
         window.location.replace(res?.data);
         localStorage.removeItem('productCart');

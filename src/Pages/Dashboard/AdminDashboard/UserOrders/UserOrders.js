@@ -22,7 +22,7 @@ const UserOrders = () => {
     const [rowsPerPage, setRowsPerPage] = React.useState(4);
 
     useEffect(()=>{
-        fetch(`https://evening-chamber-61046.herokuapp.com/userMy/${user?.email}`)
+        fetch(`http://localhost:5000/userMy/${user?.email}`)
         .then(res=>res.json())
         .then(data=>{
             setOrder(data)
@@ -41,7 +41,7 @@ const UserOrders = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`https://evening-chamber-61046.herokuapp.com/manageAllOrderDelete/${id}`)
+                axios.delete(`http://localhost:5000/manageAllOrderDelete/${id}`)
                     .then((response) => {
                         response.status === 204 &&
                             Swal.fire(

@@ -27,7 +27,7 @@ const Home = () => {
    
     // const [model, setModel] = useState([]);
     // useEffect(()=>{
-    //     fetch('https://evening-chamber-61046.herokuapp.com/users')
+    //     fetch('http://localhost:5000/users')
     //     .then(res=>res.json())
     //     .then(data=>setModel(data))
     // },[])

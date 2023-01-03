@@ -56,14 +56,14 @@ const AdminProducts = () => {
     // checkbox er value true or false return kore
 
     // useEffect(() => {
-    //     fetch('https://evening-chamber-61046.herokuapp.com/TaterSharees')
+    //     fetch('http://localhost:5000/TaterSharees')
     //         .then(res => res.json())
     //         .then(data => setQuestions(data.TaterSharee))
     // }, [])
 
     // useEffect(() => {
     //     console.log(type, year, code)
-    //     fetch('https://evening-chamber-61046.herokuapp.com/sharee')
+    //     fetch('http://localhost:5000/sharee')
     //         .then(res => res.json())
     //         .then(data => {
     //             setQuestions(data.allQuestions)
@@ -78,7 +78,7 @@ const AdminProducts = () => {
     // }, [type, year, code, page]);
 
     const fetchData = () => {
-      fetch('https://evening-chamber-61046.herokuapp.com/adminShowproduct')
+      fetch('http://localhost:5000/adminShowproduct')
       .then(res => res.json())
       .then(data => {
           setQuestions(data.allQuestions)
@@ -98,7 +98,7 @@ const AdminProducts = () => {
    
     const handleDelete=(id)=>{
         const proceed=window.confirm('are you sure, you want to delete');
-        fetch(`https://evening-chamber-61046.herokuapp.com/deleteadmin/${id}`,{
+        fetch(`http://localhost:5000/deleteadmin/${id}`,{
             method:'DELETE'
         }).then(res=>res.json())
         .then(data=>{
@@ -116,7 +116,7 @@ const AdminProducts = () => {
 
 
     useEffect(()=>{
-        fetch('https://evening-chamber-61046.herokuapp.com/adminShowproduct')
+        fetch('http://localhost:5000/adminShowproduct')
         .then(res=>res.json())
         .then(data=>setModel(data.allQuestions))
     },[])

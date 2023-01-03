@@ -6,7 +6,7 @@ const EditPotterData = () => {
    const [user,setUser]=useState({})
    const {id}=useParams()
    useEffect(()=>{
-    fetch(`https://evening-chamber-61046.herokuapp.com/potter/${id}`)
+    fetch(`http://localhost:5000/potter/${id}`)
     .then(res=>res.json())
     .then(data=>setUser(data))
    },[])
@@ -15,7 +15,7 @@ const EditPotterData = () => {
     const handleupdate=e=>{
         e.preventDefault()
 
-        fetch(`https://evening-chamber-61046.herokuapp.com/updatePotter/${id}`, {
+        fetch(`http://localhost:5000/updatePotter/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(user)

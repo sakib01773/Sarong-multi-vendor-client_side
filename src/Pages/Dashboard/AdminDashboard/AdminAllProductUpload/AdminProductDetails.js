@@ -59,7 +59,7 @@ import { CartContext } from "../../../../Context/CartContext";
     const [isFetched, setIsFetched] = useState(0);
   
     useEffect(() => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/details/${id}`)
+      fetch(`http://localhost:5000/details/${id}`)
         .then((res) => res.json())
         .then((data) => setBook(data));
     }, [id]);
@@ -75,7 +75,7 @@ import { CartContext } from "../../../../Context/CartContext";
     const onSubmit = (data) => {
         console.log(data);
 
-        fetch("https://evening-chamber-61046.herokuapp.com/review", {
+        fetch("http://localhost:5000/review", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

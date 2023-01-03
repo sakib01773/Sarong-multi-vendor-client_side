@@ -139,7 +139,7 @@ const registerUser = (email, password, name,client,contact,profession,address,ch
   // save user to database 
   const sendUser = (email, displayName,client,contact,profession,address,choose, status="pending",method) => {
     const user = { email, displayName, status,client,contact,profession,address,choose };
-    fetch('https://evening-chamber-61046.herokuapp.com/users', {
+    fetch('http://localhost:5000/users', {
       method: method,
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user)
@@ -168,7 +168,7 @@ const registerUser = (email, password, name,client,contact,profession,address,ch
 
   // buyer CONDITIONAL DATALOAD
   useEffect(() => {
-    fetch(`https://evening-chamber-61046.herokuapp.com/users/${user.email}`)
+    fetch(`http://localhost:5000/users/${user.email}`)
       .then(res => res.json())
       .then(data => {
         setBuyer(data?.buyer)
@@ -176,7 +176,7 @@ const registerUser = (email, password, name,client,contact,profession,address,ch
   }, [user.email])
   // buyer CONDITIONAL DATALOAD
   useEffect(() => {
-    fetch(`https://evening-chamber-61046.herokuapp.com/user/${user.email}`)
+    fetch(`http://localhost:5000/user/${user.email}`)
       .then(res => res.json())
       .then(data => {
         setBuyers(data?.buyers)
@@ -185,7 +185,7 @@ const registerUser = (email, password, name,client,contact,profession,address,ch
 
  // admin role the database 
  useEffect(()=>{
-  fetch(`https://evening-chamber-61046.herokuapp.com/userLogin/${user.email}`)
+  fetch(`http://localhost:5000/userLogin/${user.email}`)
   .then(res=>res.json())
   .then(data=>setAdmin(data?.admin))
 },[user.email])

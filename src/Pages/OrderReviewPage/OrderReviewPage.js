@@ -34,7 +34,7 @@ const OrderReviewPage = () => {
     const handleUpdate = (id) => {
        
 
-        // fetch(`https://evening-chamber-61046.herokuapp.com/BlogStatusUpdate/${id}`, {
+        // fetch(`http://localhost:5000/BlogStatusUpdate/${id}`, {
         //     method: "PUT",
         //     headers: { "content-type": "application/json" },
         //     body: JSON.stringify({ date }),

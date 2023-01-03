@@ -69,7 +69,7 @@ const handleClose = () => setOpen(false);
       status: "Pending",
     };
     axios
-      .post('https://evening-chamber-61046.herokuapp.com/init', paymentData)
+      .post('http://localhost:5000/init', paymentData)
       .then((res) => {
         window.location.replace(res?.data);
         localStorage.removeItem('productCart');
@@ -88,7 +88,7 @@ const handleClose = () => setOpen(false);
   }, []);
 
   const fetchData = () => {
-    fetch('https://evening-chamber-61046.herokuapp.com/postBuyer')
+    fetch('http://localhost:5000/postBuyer')
       .then(res => res.json())
       // .then(data => setWork(data))
       .then(data => {

@@ -78,10 +78,6 @@ import AdminPotterUpload from './Pages/Dashboard/AdminDashboard/AdminPotterUploa
 import Feedback from './Pages/Home/Feedback/Feedback';
 import AdminSeeFeedback from './Pages/Home/Feedback/AdminSeeFeedback';
 import PotterDetails from './Pages/Home/PotterDetails/PotterDetails';
-import ProductCustomize from './Pages/Home/Editing/ProductCustomize';
-import ProductCustomize2 from './Pages/Home/Editing/ProductCustomize2';
-import ProductCustomize3 from './Pages/Home/Editing/ProductCustomize3';
-import ProductCustomize4 from './Pages/Home/Editing/ProductCustomize4';
 // import { darkTheme, LightTheme,GlobalStyle } from '';
 
 
@@ -119,10 +115,10 @@ function App() {
               <Route path="/theme" element={<DarkAndWhiteTheme />} />
               <Route path="/register" element={<Register />} />
               <Route path="/store" element={<StoreProduct />} />
-              <Route path="/productcustomize" element={<ProductCustomize />} />
+              {/* <Route path="/productcustomize" element={<ProductCustomize />} />
               <Route path="/productcustomize2" element={<ProductCustomize2 />} />
               <Route path="/productcustomize3" element={<ProductCustomize3 />} />
-              <Route path="/productcustomize4" element={<ProductCustomize4 />} />
+              <Route path="/productcustomize4" element={<ProductCustomize4 />} /> */}
               {/* <Route path="/success" element={<SuccessOrder />} /> */}
               
               <Route path="/tat" element={<TaterSharee />} />

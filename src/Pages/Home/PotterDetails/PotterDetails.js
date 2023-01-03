@@ -59,14 +59,14 @@ import Footer from "../../../Shared/Footer/Footer";
     const [isFetched, setIsFetched] = useState(0);
      const {user}=useAuth;
     useEffect(() => {
-      fetch(`https://evening-chamber-61046.herokuapp.com/potterdetails/${id}`)
+      fetch(`http://localhost:5000/potterdetails/${id}`)
         .then((res) => res.json())
         .then((data) => setBook(data));
     }, [id]);
 
     useEffect(()=>{
 
-      fetch("https://evening-chamber-61046.herokuapp.com/review")
+      fetch("http://localhost:5000/review")
       .then(res=>res.json())
       .then(data=>{
         // const managePost = data?.data.data
@@ -95,7 +95,7 @@ import Footer from "../../../Shared/Footer/Footer";
     const onSubmit = (data) => {
         console.log(data);
 
-        fetch("https://evening-chamber-61046.herokuapp.com/review", {
+        fetch("http://localhost:5000/review", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

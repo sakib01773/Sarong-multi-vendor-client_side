@@ -23,7 +23,7 @@ const OrderShow = () => {
     const [status, setStatus] = useState('')
 
     useEffect(()=>{
-        fetch(`https://evening-chamber-61046.herokuapp.com/my/${user?.email}`)
+        fetch(`http://localhost:5000/my/${user?.email}`)
         .then(res=>res.json())
         .then(data=>{
             setOrder(data)
@@ -32,7 +32,7 @@ const OrderShow = () => {
 
 
     const handleUpdate = (id) => {
-        fetch(`https://evening-chamber-61046.herokuapp.com/updateStatus/${id}`, {
+        fetch(`http://localhost:5000/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -54,7 +54,7 @@ const OrderShow = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`https://evening-chamber-61046.herokuapp.com/manageAllOrderDelete/${id}`)
+                axios.delete(`http://localhost:5000/manageAllOrderDelete/${id}`)
                     .then((response) => {
                         response.status === 204 &&
                             Swal.fire(

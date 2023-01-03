@@ -16,7 +16,7 @@ const ManageOrder = () => {
 
 
     useEffect(() => {
-        fetch(`https://evening-chamber-61046.herokuapp.com/adminConfarm`)
+        fetch(`http://localhost:5000/adminConfarm`)
             .then((res) => res.json())
             .then((data) => setQuestions(data));
             // console.log(data)
@@ -30,7 +30,7 @@ const ManageOrder = () => {
     const handleDelete=(id)=>{
         const proceed=window.confirm('are you sure, you want to delete');
         if(proceed){
-            fetch(`https://evening-chamber-61046.herokuapp.com/deleteUser/${id}`,{
+            fetch(`http://localhost:5000/deleteUser/${id}`,{
                 method:'DELETE'
             })
             .then(res=>res.json())
@@ -50,7 +50,7 @@ const ManageOrder = () => {
 // let value=question.drivelink;
 
     const handleUpdate = (id) => {
-        fetch(`https://evening-chamber-61046.herokuapp.com/QuestionStatusUpdate/${id}`, {
+        fetch(`http://localhost:5000/QuestionStatusUpdate/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
