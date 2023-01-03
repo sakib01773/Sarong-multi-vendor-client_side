@@ -7,6 +7,7 @@ import axios from 'axios';
 
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Swal from 'sweetalert2';
+//buyerorder
 // import useAuth from '../../../../Hooks/useAuth';
 // import CustomerAddress from './Address';
 // import CartOrder from './MyBooking';
@@ -22,13 +23,13 @@ const BuyerOrder = () => {
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(4);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch(`https://evening-chamber-61046.herokuapp.com/myOrder/${user?.email}`)
-        .then(res=>res.json())
-        .then(data=>{
-            setOrder(data)
-        })
-    },[user?.email])
+            .then(res => res.json())
+            .then(data => {
+                setOrder(data)
+            })
+    }, [user?.email])
 
 
     const handleDelete = (id) => {
@@ -75,56 +76,56 @@ const BuyerOrder = () => {
                     <AddShoppingCartIcon />{ordering.length === 0 ? "My Order Not Found" : "MY Order"}
                 </Fab>
             </Divider>
-           
-
-          <Box>
-
-           
 
 
-          {
-                ordering?.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)?.map(order =>
-                    <Box key={order?._id}>
+            <Box>
 
-                        <Grid
-                            container
-                            spacing={2}
-                            sx={{ mt: 6 }}
-                            columns={{ xs: 4, sm: 8, md: 12 }}
-                        >
 
-                            <Grid item xs={4} sm={8} md={7}>
 
-                                <CustomerAddress
-                                    order={order}
-                                    handleDelete={handleDelete}
-                                />
+
+                {
+                    ordering?.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)?.map(order =>
+                        <Box key={order?._id}>
+
+                            <Grid
+                                container
+                                spacing={2}
+                                sx={{ mt: 6 }}
+                                columns={{ xs: 4, sm: 8, md: 12 }}
+                            >
+
+                                <Grid item xs={4} sm={8} md={7}>
+
+                                    <CustomerAddress
+                                        order={order}
+                                        handleDelete={handleDelete}
+                                    />
+
+                                </Grid>
+
+                                <Grid sx={{ py: 3 }} item xs={4} sm={8} md={5}>
+
+                                    <CartOrder
+                                        cart={order.cartProducts}
+
+                                    />
+                                </Grid>
 
                             </Grid>
 
-                            <Grid sx={{ py: 3 }} item xs={4} sm={8} md={5}>
+                            <Divider >
+                                <Chip label={<AddShoppingCartIcon />} />
 
-                                <CartOrder
-                                    cart={order.cartProducts}
-
-                                />
-                            </Grid>
-
-                        </Grid>
-
-                        <Divider >
-                            <Chip label={<AddShoppingCartIcon />} />
-
-                        </Divider>
-                    </Box>
-                )
-            }
+                            </Divider>
+                        </Box>
+                    )
+                }
 
 
 
-         
-          </Box>
-{/* cartProducts */}
+
+            </Box>
+            {/* cartProducts */}
             <TableFooter>
                 <TablePagination
                     rowsPerPageOptions={[5, 10, 15, 20, 25, 30, 40]}
