@@ -8,7 +8,6 @@ import Header from '../../Shared/Header/Header';
 // import NavigationBar from '../Shared/NavigationBar/NavigationBar';
 import PaymentFrom from './PaymentForm';
 
-
 const Payment = () => {
     return (
         <>
@@ -33,5 +32,5 @@ const Payment = () => {
         </>
     );
 };
-
 export default Payment;
+// comment 
