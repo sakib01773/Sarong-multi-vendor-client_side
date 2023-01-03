@@ -22,6 +22,7 @@ import {
 
 // import Header from '../../../Shared/Header/Header';
 // import Footer from '../../../Shared/Footer/Footer';
+//admin
 import ReactPaginate from 'react-paginate';
 import useAuth from '../../../../Hooks/useAuth';
 // import spinner from './../../../Assets/Images/Infinity-1s-200px.svg'
